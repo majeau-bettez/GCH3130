@@ -541,7 +541,7 @@ class SteamMethaneReformer:
         if what == 'X' or what == 'all':
             plt.title(
                 f"Profil de conversion pour $T_a$={self.Ta} K, $P_0$={self.P0_tot} bar,"
-                " et $F0_{{tot}}$ = {self.F0_tot:.1f} kmol/h")
+                f" et $F0_{{tot}}$ = {self.F0_tot:.1f} kmol/h")
             plt.plot(self.sol.t, self.X, label="$X_{CH_4}$")
             plt.ylabel("Conversion")
             plt.xlabel('Progression dans le PBR [kg catalyseur]')
